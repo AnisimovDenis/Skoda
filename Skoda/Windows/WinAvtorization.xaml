@@ -16,7 +16,8 @@
         Title="Skoda" Height="400" Width="400" 
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" 
-        Icon="/Skoda;component/Resources/skoda-logo.png">
+        Icon="/Skoda;component/Resources/skoda-logo.png"
+        WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
