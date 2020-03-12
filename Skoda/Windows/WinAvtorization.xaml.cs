@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Skoda.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,17 @@ namespace Skoda
         public WinAvtorization()
         {
             InitializeComponent();
-        }
 
-        private void passwordBoxPassword_ColorChanged(object sender, RoutedPropertyChangedEventArgs<Color> e)
-        {
+            tbDrager.MouseDown += delegate { this.DragMove(); };
 
+            btnBack.Click += delegate
+            {
+                WinMainMenu winMainMenu = new WinMainMenu();
+                winMainMenu.Show();
+                this.Close();
+            };
+
+            btnExit.Click += delegate { this.Close(); };
         }
     }
 }
