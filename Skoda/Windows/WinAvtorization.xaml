@@ -41,7 +41,8 @@
             <TextBlock x:Name="tbDrager"
                        VerticalAlignment="Top"
                        Grid.ColumnSpan="2"
-                       Height="25"/>
+                       Height="25"
+                       Margin="2"/>
 
             <Button x:Name="btnBack"
                     Style="{DynamicResource Button}"
@@ -49,7 +50,8 @@
                     VerticalAlignment="Top"
                     HorizontalAlignment="Right"
                     Width="50"
-                    Height="25">
+                    Height="25"
+                    Margin="2">
                 <materialDesign:PackIcon Kind="ArrowRightBold" />
             </Button>
         </Grid>
