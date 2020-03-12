@@ -37,6 +37,23 @@
                        Text="Авторизация"
                        Style="{StaticResource TextBlockHeadLine}"
                        Grid.ColumnSpan="2"/>
+
+            <TextBlock x:Name="tbDrager"
+                       VerticalAlignment="Top"
+                       Grid.ColumnSpan="2"
+                       Height="25"
+                       Margin="2"/>
+
+            <Button x:Name="btnBack"
+                    Style="{DynamicResource Button}"
+                    Grid.Column="1"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Width="50"
+                    Height="25"
+                    Margin="2">
+                <materialDesign:PackIcon Kind="ArrowRightBold" />
+            </Button>
         </Grid>
 
         <Grid Grid.Row="1">
@@ -83,7 +100,7 @@
                         Content="Войти"
                         Style="{DynamicResource Button}"/>
 
-                <Button x:Name="btnExite"
+                <Button x:Name="btnExit"
                         Content="Выйти"
                         Grid.Column="1"
                         Style="{DynamicResource Button}"/>
